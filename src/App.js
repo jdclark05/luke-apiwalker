@@ -19,14 +19,14 @@ function App() {
         res.json().then(json => {
           data.homeworldName = json.name
           setPersonData([ data ]);
+          setPlanetData([]);
         })
       })
-    console.log(personData)
   }
 
   const planetFinder = ( data ) => {
     setPlanetData([ data ]);
-    console.log(planetData)
+    setPersonData([]);
   }
 
 
