@@ -3,7 +3,7 @@ import './App.css';
 import Form from './components/Form';
 import PeopleDisplay from './components/PeopleDisplay';
 import PlanetDisplay from './components/PlanetDisplay';
-import appBackground from './components/images/wet-tech.png';
+import appBackground from './components/images/starWars.png';
 
 function App() {
   const[personData, setPersonData] = useState([]);
@@ -11,6 +11,14 @@ function App() {
 
   const personFinder = ( data ) => {
     setPersonData([ data ]);
+    let tempUrl = data.homeworld;
+    fetch(tempUrl)
+      .then(res => {
+        res.json().then(json => {
+          data.homeworldName = json.name
+          setPersonData([ data ]);
+        })
+      })
     console.log(personData)
     setPlanetData([]);
   }
@@ -35,7 +43,7 @@ function App() {
   return (
     <div className="mainDisplayContainer" style={styles}>
       <Form  onPersonFinder={ personFinder } onPlanetFinder={planetFinder} />
-      <PeopleDisplay path="/planets" personData={personData} />
+      <PeopleDisplay path="/people" personData={personData} onPlanetFinder={planetFinder} />
       <PlanetDisplay path="/planets" planetData={planetData} />
     </div>
   );

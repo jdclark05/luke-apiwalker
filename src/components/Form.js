@@ -28,11 +28,18 @@ const Form = (props) => {
         return new Promise((resolve, reject) => {
             let url = (personUrl + value)
             fetch(url)
-            .then(res => res.json())
+            .then(res => {
+                if(res.status === 200){
+                  return res.json()  
+                } else {
+                    throw new Error("These aren't the droids you're looking for")
+                }
+            })
             .then(data => {
                 props.onPersonFinder(data);
                 resolve(data);
             })
+            .catch(err => alert(err.message))
         })
     }
 
@@ -40,11 +47,18 @@ const Form = (props) => {
         return new Promise((resolve, reject) => {
             let url = (planetUrl + value)
             fetch(url)
-            .then(res => res.json())
+            .then(res => {
+                if(res.status === 200){
+                  return res.json()  
+                } else {
+                    throw new Error("These aren't the droids you're looking for")
+                }
+            })
             .then(data => {
                 props.onPlanetFinder(data);
                 resolve(data);
             })
+            .catch(err => alert(err.message))
         })
     }
 
@@ -59,7 +73,7 @@ const Form = (props) => {
                     </select>
                 </div>
                 <div className="inputDiv">
-                    <label className="labelInput">ID:</label>
+                    <label className="labelInput">id:</label>
                     <input className="inputInput"/>
                 </div>
                 <div className="buttonDiv">

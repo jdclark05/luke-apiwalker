@@ -1,7 +1,12 @@
 /* MAIN APP PAGE */
-
-
-
+@font-face {
+  font-family: 'Starjedi';
+  src: local('Starjedi'), url(./components/fonts/Starjedi.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Starjhol';
+  src: local('Starjhol'), url(./components/fonts/Starjhol.ttf) format('truetype');
+}
 
 /*SEARCH FORM */
 .formMain {
@@ -37,20 +42,23 @@
 }
 
 .selectLabel {
-  color: rgb(51, 160, 0);
+  font-family: 'Starjedi';
+  color: white;
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .selectSelect{
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   height: 3rem;
   width: 13rem;
   font-size: 1.2rem;
   margin-left: 1rem;
   border-radius: 5px;
   text-align: center;
-  border: 2px solid rgb(51, 160, 0);
+  border: 2px solid DarkGoldenRod;
   padding: 5px;
   color: white;
   background-color: rgb(31, 31, 31);
@@ -66,19 +74,23 @@
 }
 
 .labelInput {
-  color: rgb(51, 160, 0);
+  font-family: 'Starjedi';
+  letter-spacing: .3rem;
+  color: white;
   font-weight: bold;
   font-size: 1.3rem;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   margin-right: 7px;
 }
 
 .inputInput{
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   height: 2.8rem;
   width: 4.5rem;
   text-align: center;
   font-size: 1.3rem;
-  border: 2px solid rgb(51, 160, 0);
+  border: 2px solid DarkGoldenRod;
   border-radius: 5px;
   color: white;
   background-color: rgb(31, 31, 31);
@@ -95,47 +107,49 @@
 }
 
 .buttonButton {
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   flex: .5;
   margin-left: 25px;
   height: 3.2rem;
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: bold;
-  border: 2px solid rgb(51, 160, 0);
+  border: 2px solid DarkGoldenRod;
   background-color: rgb(0, 0, 0);
-  color: rgb(51, 160, 0);
+  color: white;
 }
 
 /* PEOPLE DISPLAY */
 
 .cardMain {
   margin-top: 50px;
-  margin-left: -20px;
+  margin-left: -10px;
   width: 75vw;
-  height: 25vh;
+  height: 28vh;
   display: flex;
   justify-content: flex-end;
 }
 
 .cardMain2 {
   margin-top: -200px;
-  margin-left: -20px;
-  width: 75vw;
-  height: 25vh;
+  margin-left: -10px;
+  width: 80vw;
+  height: 28vh;
   display: flex;
   justify-content: flex-end;
 }
 
 .personCardMain {
-  border: 6px solid rgb(51, 160, 0);
+  border: 6px solid DarkGoldenRod;
   border-radius: 15px;
-  height: 400px;
-  width: 550px;
+  height: 450px;
+  width: 600px;
   background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: -1px 2px 29px 20px rgba(51, 160, 0, 0.1);
+  box-shadow: -1px 2px 29px 20px rgba(198, 201, 36, 0.1);
 }
 
 .nameBanner {
@@ -145,16 +159,18 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  border-bottom: 6px solid rgb(51, 160, 0);
+  border-bottom: 6px solid DarkGoldenRod;
 }
 
 .personName {
-  font-size: 3rem;
-  color: white;
+  font-family: 'Starjhol';
+  letter-spacing: .2rem;
+  font-size: 3.2rem;
+  color: DarkGoldenRod;
 }
 
 .birthYear {
-  margin-top: 15px;
+  margin-top: 0;
   width: 100%;
   height: 14%;
   display: flex;
@@ -163,9 +179,11 @@
 }
 
 .birthYear > p {
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   font-size: 1.6rem;
   font-weight: bold;
-  color: rgb(51, 160, 0);
+  color: DarkGoldenRod;
 }
 
 .bodySizes{
@@ -175,9 +193,11 @@
 }
 
 .bodySizes > p {
-  font-size: 1.4rem;
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: rgb(51, 160, 0);
+  color: DarkGoldenRod;
 }
 
 .features {
@@ -187,26 +207,64 @@
 }
 
 .features > p {
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
+  font-size: .9rem;
+  font-weight: bold;
+  color: DarkGoldenRod;
+}
+
+.homeWorld {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+#whiteHomeLink {
+  text-decoration: none;
+  color: white;
+  margin-right: 6px;
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   font-size: 1.4rem;
   font-weight: bold;
-  color: rgb(51, 160, 0);
 }
+
+.homeWorldLink {
+  text-decoration: underline;
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: DarkGoldenRod;
+}
+
+.homeWorldLink:hover{
+  cursor: pointer;
+}
+
+
 /* PLANET DISPLAY */
 
 .population {
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   display: flex;
   flex-direction: row;
   height: 10%;
-  color:rgb(51, 160, 0);
+  color:DarkGoldenRod;
   font-size: 1.5rem;
   margin-bottom: 3px;
 }
 
 .climate {
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   display: flex;
   flex-direction: row;
   height: 10%;
-  color:rgb(51, 160, 0);
+  color:DarkGoldenRod;
   font-size: 1.3rem;
   margin-bottom: 3px;
 }
@@ -214,16 +272,37 @@
 .terrain {
   display: flex;
   flex-direction: row;
-  height: 10%;
-  color:rgb(51, 160, 0);
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
+  height: 15%;
+  color:DarkGoldenRod;
   font-size: 1.3rem;
 }
 
+.terrain > p{
+  flex: .6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.terrainFeatures {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .surfaceWater{
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   display: flex;
   flex-direction: row;
   height: 10%;
-  color:rgb(51, 160, 0);
+  color:DarkGoldenRod;
   font-size: 1.3rem;
 }
 
@@ -237,26 +316,29 @@
 }
 
 .Orbit {
+  font-family: 'Starjedi';
+  letter-spacing: .2rem;
   display: flex;
   flex-direction: row;
   height: 10%;
-  color:rgb(51, 160, 0);
-  font-size: 1.3rem;
+  color:DarkGoldenRod;
+  font-size: 1.2rem;
   margin: 15px;
   margin-top: 0;
 }
 
 .white{
   color: white;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 #white{
+  text-decoration: none;
   color: white;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 #white2{
   color: white;
-  margin-right: -60px;
+  margin-right: -50px;
 }
