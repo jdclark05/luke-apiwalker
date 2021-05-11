@@ -1,14 +1,14 @@
 import React, { useState} from 'react';
+import { navigate } from '@reach/router';
 
 
 const Form = (props) => {
-    const [optionValue, setOptionValue] = useState('1');
+    const [optionValue, setOptionValue] = useState('person');
     const personUrl = 'http://swapi.dev/api/people/'
     const planetUrl = 'http://swapi.dev/api/planets/'
 
     const onChange = (e, selectionValue) => {
         setOptionValue(selectionValue);
-        console.log(optionValue)
     }
 
     const handleSubmit = (e, id) => {
@@ -16,10 +16,12 @@ const Form = (props) => {
         e.preventDefault();
         console.log(id)
         let value = optionValue;
-        if(value === "1"){
+        if(value === "person"){
             getPerson(id);
+            navigate(`/${optionValue}/${id}`);
         } else {
             getPlanet(id);
+            navigate(`/${optionValue}/${id}`);
         }
         e.target[1].value = "";
     }
@@ -68,8 +70,8 @@ const Form = (props) => {
                 <div className="dropDownSelect">
                     <label className="selectLabel">Search For:</label>
                     <select onChange={ (e) => onChange(e, e.target.value)} className="selectSelect" placeholder="First name">
-                        <option className="optionValue" value="1" >People</option>
-                        <option className="optionValue" value="2" >Planets</option>
+                        <option className="optionValue" value="person" >People</option>
+                        <option className="optionValue" value="planet" >Planets</option>
                     </select>
                 </div>
                 <div className="inputDiv">

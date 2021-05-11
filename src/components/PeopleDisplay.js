@@ -1,11 +1,9 @@
 import React from 'react';
-
-
+import { navigate } from '@reach/router';
 
 const PeopleDisplay = (props) => {
-
+    
     const onClick = (e, url) => {
-        console.log("This is the URL", url)
         e.preventDefault();
         getPlanet(url);
     }
@@ -25,6 +23,9 @@ const PeopleDisplay = (props) => {
                 resolve(data);
             })
             .catch(err => alert(err.message))
+            let id = /\/(\d+)\/?$/.exec(url)[1]
+            console.log(id)
+            navigate(`/planet/${id}`);
         })
     }
 
