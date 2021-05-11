@@ -44,8 +44,8 @@ const PeopleDisplay = (props) => {
                             <p id="white">Born: </p><p>{person.birth_year}</p>
                         </div>
                         <div className="bodySizes">
-                            <p id="white2">Height: </p><p>{person.height} centimeters</p>
-                            <p id="white2">Weight: </p><p>{person.mass} kgs</p>
+                            <p id="white2">Height: </p><p>{person.height} cm</p>
+                            <p id="white2">Weight: </p><p>{person.mass} kg</p>
                         </div>
                         <div className="features">
                             <p id="white2">Hair Color: </p><p>{person.hair_color}</p>
