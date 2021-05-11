@@ -24,6 +24,7 @@ const PlanetDisplay = (props) => {
                         <div className="terrainFeatures">
                             <p>{planet.terrain}</p>
                         </div>
+                    </div>
                     <div className="surfaceWater">
                         <p className="white">Surface Water Percentage: </p><p>{planet.surface_water}</p>
                     </div>
