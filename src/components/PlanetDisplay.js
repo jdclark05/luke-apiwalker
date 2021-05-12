@@ -17,12 +17,15 @@ const PlanetDisplay = (props) => {
                         <p className="white">Population: </p><p>{planet.population}</p>
                     </div>
                     <div className="climate">
-                        <p className="white">Climate: </p><p>{planet.climate}</p>
+                        <p className="white3">Climate: </p>
+                        <div className="terrainFeatures">
+                            <p className="terrainText">{planet.climate}</p>
+                        </div>
                     </div>
                     <div className="terrain">
-                        <p className="white">Terrain: </p>
+                        <p className="white3">Terrain: </p>
                         <div className="terrainFeatures">
-                            <p>{planet.terrain}</p>
+                            <p className="terrainText">{planet.terrain}</p>
                         </div>
                     </div>
                     <div className="surfaceWater">

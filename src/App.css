@@ -1,11 +1,12 @@
 /* MAIN APP PAGE */
 @font-face {
   font-family: 'Starjedi';
-  src: local('Starjedi'), url(./components/fonts/Starjedi.ttf) format('truetype');
+  src: local('Starjedi'), url(./components/fonts/starWarsSolid.ttf) format('truetype');
 }
+
 @font-face {
-  font-family: 'Starjhol';
-  src: local('Starjhol'), url(./components/fonts/Starjhol.ttf) format('truetype');
+  font-family: 'starWars';
+  src: local('starWars'), url(./components/fonts/starWarsHollow.ttf) format('truetype');
 }
 
 .mainBG {
@@ -23,8 +24,8 @@
 .displayContentMain {
   margin-top: 50px;
   margin-left: 51%;
-  width: 520px;
-  height: 530px;
+  width: 700px;
+  height: 650px;
   display: flex;
   justify-content: center;
 }
@@ -137,20 +138,22 @@
 /* PEOPLE DISPLAY */
 
 .cardMain {
-  width: 650px;
-  height: 400px;
+  margin-right: 100px;
+  width: 750px;
+  height: 500px;
 }
 
 .cardMain2 {
-  width: 650px;
-  height: 400px;
+  margin-right: 100px;
+  width: 750px;
+  height: 500px;
 }
 
 .personCardMain {
   border: 6px solid DarkGoldenRod;
   border-radius: 15px;
   height: 450px;
-  width: 600px;
+  width: 700px;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -169,7 +172,8 @@
 }
 
 .personName {
-  font-family: 'Starjhol';
+  text-align: center;
+  font-family: 'starWars';
   letter-spacing: .2rem;
   font-size: 3.2rem;
   color: DarkGoldenRod;
@@ -201,7 +205,7 @@
 .bodySizes > p {
   font-family: 'Starjedi';
   letter-spacing: .2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-left: 9px;
   font-weight: bold;
   color: DarkGoldenRod;
@@ -215,6 +219,7 @@
 
 .features > p {
   font-family: 'Starjedi';
+  text-align: center;
   letter-spacing: .2rem;
   font-size: .9rem;
   font-weight: bold;
@@ -263,7 +268,10 @@
   height: 10%;
   color:DarkGoldenRod;
   font-size: 1.5rem;
-  margin-bottom: 3px;
+  margin-top: -20px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .climate {
@@ -271,10 +279,11 @@
   letter-spacing: .2rem;
   display: flex;
   flex-direction: row;
-  height: 10%;
+  height: 15%;
   color:DarkGoldenRod;
   font-size: 1.3rem;
-  margin-bottom: 3px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .terrain {
@@ -282,7 +291,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 3px;
   font-family: 'Starjedi';
   letter-spacing: .2rem;
   height: 15%;
@@ -290,15 +299,18 @@
   font-size: 1.3rem;
 }
 
-.terrain > p{
-  flex: .6;
+.terrainText{
+  /* text-align: center; */
+  flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
 .terrainFeatures {
-  flex: 1;
+  flex: 1.1;
   display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -312,6 +324,9 @@
   height: 10%;
   color:DarkGoldenRod;
   font-size: 1.3rem;
+  margin-top: -10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .orbitInfo {
@@ -331,8 +346,14 @@
   height: 10%;
   color:DarkGoldenRod;
   font-size: 1.2rem;
-  margin: 15px;
-  margin-top: 0;
+  margin-top: 10px;
+}
+
+.white3{
+  text-align: right;
+  flex: 1;
+  color: white;
+  margin-right: 6px;
 }
 
 .white{
