@@ -41,15 +41,23 @@ const PeopleDisplay = (props) => {
                             <p id="whiteHomeLink">Home World: </p><p className="homeWorldLink" onClick={ (e) => onClick(e, person.homeworld)}>{person.homeworldName}</p>
                         </div>
                         <div className="birthYear">
-                            <p id="white">Born: </p><p>{person.birth_year}</p>
+                            <p id="white">Born: </p><p id="goldShadow2">{person.birth_year}</p>
                         </div>
                         <div className="bodySizes">
-                            <p id="white2">Height: </p><p>{person.height} cm</p>
-                            <p id="white2">Weight: </p><p>{person.mass} kg</p>
+                            <div className="bodyMes1">
+                                <p id="bodyMesText">Height: </p><p id="goldShadow">{person.height} cm</p>
+                            </div>
+                            <div className="bodyMes2">
+                                <p id="bodyMesText">Weight: </p><p id="goldShadow" >{person.mass} kg</p>
+                            </div>
                         </div>
-                        <div className="features">
-                            <p id="white2">Hair Color: </p><p>{person.hair_color}</p>
-                            <p id="white2">Complexion: </p><p>{person.skin_color}</p>
+                        <div className="bodySizes">
+                        <div className="hairDiv">
+                                <p id="bodyMesText">Hair Color: </p><p id="goldShadow" >{person.hair_color} </p>
+                            </div>
+                            <div className="complDiv">
+                                <p id="bodyMesText">Complexion: </p><p id="goldShadow">{person.skin_color} </p>
+                            </div>
                         </div>
                     </div>
                 )
