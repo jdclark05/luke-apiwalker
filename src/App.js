@@ -7,6 +7,7 @@ import appBackground from './components/images/starWars.png';
 import appBackground2 from './components/images/mainBG.png';
 import { Router } from '@reach/router';
 
+
 function App() {
   const[personData, setPersonData] = useState([]);
   const [planetData, setPlanetData] = useState([]);

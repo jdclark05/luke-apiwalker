@@ -14,7 +14,6 @@ const Form = (props) => {
     const handleSubmit = (e, id) => {
         console.log("This is the ID", id)
         e.preventDefault();
-        console.log(id)
         let value = optionValue;
         if(value === "person"){
             getPerson(id);
