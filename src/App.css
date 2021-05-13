@@ -303,7 +303,7 @@
 .complDiv > p {
   font-family: 'Starjedi';
   letter-spacing: .2rem;
-  font-size: .9rem;
+  font-size: 1rem;
   margin-left: 4px;
   font-weight: normal;
   color: rgb(219, 140, 21);
@@ -312,7 +312,7 @@
 .hairDiv > p {
   font-family: 'Starjedi';
   letter-spacing: .2rem;
-  font-size: .9rem;
+  font-size: 1rem;
   margin-left: 4px;
   font-weight: normal;
   color: rgb(219, 140, 21);
@@ -340,7 +340,7 @@
   font-family: 'Starjedi';
   letter-spacing: .2rem;
   font-size: 1.4rem;
-  font-weight: normal;
+  font-weight: lighter;
   color: rgb(219, 140, 21);
   text-shadow: 
 		-1px 0 1px rgb(219, 163, 21), 
@@ -354,7 +354,7 @@
 }
 
 #goldShadow{
-  font-weight: normal;
+  font-weight: lighter;
   text-shadow: 
 		-1px 0 .75px rgb(219, 163, 21), 
 		0 .3px .3px rgb(219, 163, 21), 
@@ -363,7 +363,7 @@
 }
 
 #goldShadow2{
-  font-weight: normal;
+  font-weight: lighter;
   text-shadow: 
 		-1px 0 1px rgb(219, 163, 21), 
 		0 .3px .3px rgb(219, 163, 21), 
@@ -393,6 +393,7 @@
 }
 
 #goldShadow3 {
+  font-weight: lighter;
   text-shadow: 
   -1px 0 1px rgb(219, 163, 21), 
   0 .3px .3px rgb(219, 163, 21), 
