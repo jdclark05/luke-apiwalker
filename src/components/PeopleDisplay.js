@@ -51,8 +51,8 @@ const PeopleDisplay = (props) => {
                                 <p id="bodyMesText">Weight: </p><p id="goldShadow" >{person.mass} kg</p>
                             </div>
                         </div>
-                        <div className="bodySizes">
-                        <div className="hairDiv">
+                        <div className="featureStats">
+                            <div className="hairDiv">
                                 <p id="bodyMesText">Hair Color: </p><p id="goldShadow" >{person.hair_color} </p>
                             </div>
                             <div className="complDiv">
