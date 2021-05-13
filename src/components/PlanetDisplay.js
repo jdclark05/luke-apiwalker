@@ -33,7 +33,7 @@ const PlanetDisplay = (props) => {
                     </div>
                     <div className="orbitInfo">
                         <div className="Orbit">
-                            <p className="white">Day (in hrs):</p><p className="green"> {planet.rotation_period}</p>
+                            <p className="white">Day (in hrs):</p><p> {planet.rotation_period}</p>
                         </div>
                         <div className="Orbit">
                             <p className="white">Year (in days): </p><p>{planet.orbital_period}</p>

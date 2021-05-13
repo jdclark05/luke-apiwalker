@@ -49,7 +49,7 @@ const PeopleDisplay = (props) => {
                         </div>
                         <div className="features">
                             <p id="white2">Hair Color: </p><p>{person.hair_color}</p>
-                            <p id="white2">Eye Color: </p><p>{person.eye_color}</p>
+                            <p id="white2">Complexion: </p><p>{person.skin_color}</p>
                         </div>
                     </div>
                 )
